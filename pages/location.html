@@ -46,7 +46,12 @@
       <p>Hours:11:30AM–11:30PM</p>
       <p>Phone: (718) 777-7788</p>
       <hr>
+      <p>Address: ScriptEd’s office at 85 Broad St. New York, New York </p>
+      <p>Hours:11:30AM–11:30PM</p>
+      <p>Phone: (718) 777-7788</p>
+      <hr>
     </div>
+
     
     <!--<div class="col-sm-9">-->
       <div id="map"></div>
@@ -58,13 +63,18 @@
       var map;
       function initMap() {
         var uluru = {lat: 40.7661763, lng: -73.9206756};
+        var office = {lat: 40.7040377, lng:-74.01159690000001};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: uluru
+          
+          
         });
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+          position: uluru, 
+          map: map,
+          position: office
+          
         });
       }
     </script>
