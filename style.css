@@ -78,6 +78,13 @@ body {
 .jumbotron {
     color: #FFFFFF;
     margin: 0;
+    
+}
+
+.jumbotron .container{
+        
+    background-color: gray;
+    border-radius: 25px;
 }
 
 .jumbotron .btn {
