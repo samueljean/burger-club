@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <meta charset="utf-8">
@@ -101,7 +102,7 @@
 
   <div class="footer">
     <div class="container">
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <p class="lead">
           Visit Us
         </p>
@@ -109,37 +110,42 @@
         <p>Hours:11:30AM–11:30PM</p>
         <p>Phone: (718) 777-7788</p>
       </div>
-      <div class="col-sm-3">
+      <div id="spacing" class="col-sm-4">
         <p class="lead">Contact Us</p>
-        <input id="NameEntered" class="form-control" type="text" name="name" placeholder="Your Name" />
-        <input id="EmailEntered" class="form-control" type="text" name="email" placeholder="E-mail" />
-        <button id="myBtn" class="btn"> Sign up </button>
-        <div class="modal">
+      
+      <form action="https://formspree.io/kurtmix123@gmail.com"
+      method="POST">
+        <input class="form-control" type="text" name="name" id="NameEntered" placeholder="Your Name" /> 
+        <input class="form-control" type="email" name="email" id="EmailEntered" placeholder="E-mail" />
+        <button type="submit" value="Send" id="myBtn" class="btn"> Sign up </button>
+     
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p id="dank">
-      Kek
-    </p>
-  </div>
+    </form>
+<!-- The Modal -->
+  <div id="myModal" class="modal">
 
+<!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+        <p id="kek"></p>
+    </div>
+
+    </div>
   </div>
-      </div>
       <section id="social">
-        <div class="col-sm-6">
+        <div class="col-sm-4">
           <ul>
-            <li>
-              <a href="https://www.facebook.com/BurgerClubAstoria"><img class="animated" src="images/facebook.svg" alt="Facebook" /></a>
+            <li id="animated" >
+              <a href="https://www.facebook.com/BurgerClubAstoria"><img id="animated" src="images/facebook.svg" alt="Facebook" /></a>
             </li>
-            <li>
-              <a href="https://twitter.com/@BurgerClub30Ave"><img class="animated" src="images/twitter.svg" alt="Twitter" /></a>
+            <li id="animated">
+              <a href="https://twitter.com/@BurgerClub30Ave"><img id="animated" src="images/twitter.svg" alt="Twitter" /></a>
             </li>
-            <li>
-              <a href="https://www.instagram.com/burgerclubnyc/"><img class="animated" src="images/instagram.svg" alt="Instagram" /></a>
+            <li id="animated">
+              <a href="https://www.instagram.com/burgerclubnyc/"><img id="animated" src="images/instagram.svg" alt="Instagram" /></a>
             </li>
-            <li>
-              <a href="https://www.linkedin.com/"><img class="animated" src="images/linkedin.svg" alt="LinkedIn" /></a>
+            <li id="animated">
+              <a href="https://www.linkedin.com/"><img id="animated" src="images/linkedin.svg" alt="LinkedIn" /></a>
             </li>
           </ul>
         </div>
@@ -152,8 +158,6 @@
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 

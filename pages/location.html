@@ -60,12 +60,12 @@
     
     
     <script>
-      var map;
+      // var map;
       function initMap() {
         var uluru = {lat: 40.7661763, lng: -73.9206756};
-        var office = {lat: 40.7040377, lng:-74.01159690000001};
+        var office = {lat: 40.7040377, lng:-74.011211};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
+          zoom: 12,
           center: uluru
           
           
@@ -73,9 +73,16 @@
         var marker = new google.maps.Marker({
           position: uluru, 
           map: map,
-          position: office
+          type: location
+          
           
         });
+        var marker = new google.maps.Marker({
+          position: office,
+          map: map,
+          type: location
+        })
+       // marker.setMap(map);
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJWN3KKLlUl6-LcBZVVfGKMamX_KwjbKA&callback=initMap"
